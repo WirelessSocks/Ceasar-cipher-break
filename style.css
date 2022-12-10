@@ -1,0 +1,47 @@
+.lang {
+    margin-left: 5px;
+}
+
+.top {
+    font-size: 50px;
+    color: #f79005;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    background-color: #e7e3da;
+}
+
+.info_field {
+    width: 600px;
+    height: 400px;
+    background: #afafaf ;
+    font-family: Montserrat;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0px 0px 0px ;
+    margin: 0px;
+}
+
+textArea {
+    resize: vertical;
+    padding: 15px;
+}
+
+
+input, textArea, select {
+    background: none;
+    border: 1px solid black;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+
+    width: 320px;
+    height: 60px;
+}

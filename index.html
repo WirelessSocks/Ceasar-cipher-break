@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceasar cipher break</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <div class="top">Ceasar cipher break</div>
+    </section>
+    
+    <hr>
+
+    <form>
+        <div class="radio">
+            <input type="radio" class="lang_rus" id="lang_rus" value="1" name="rad" />
+            <label for="lang_rus">Rus</label>
+        </div>
+
+        <p></p>
+
+        <div class="radio">
+            <input type="radio" class="lang_eng" id="lang_eng" value="2" name="rad"/>
+            <label for="lang_eng">Eng</label>
+        </div>
+    </form>
+
+    
+    <p></p>
+
+    <div>Input encrypted text</div>
+
+    <div>
+        <input type="text" class="user_text">
+    </div>
+    
+
+
+    <div>Input key number</div>
+
+    <section class="section">
+
+        <input type="number" pattern="\d*" class="i-1" id="key"><br>
+
+        <button id="btnBrk">Break</button><br>
+
+        <p></p>
+
+        <div class="out">Output</div>
+
+    </section>
+
+    <p id='output'></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
