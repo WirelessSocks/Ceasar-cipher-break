@@ -18,7 +18,7 @@ function BreakCipher() {
 
     let text = document.querySelector(".user_text").value.toLowerCase();
 
-    console.log(text);
+    //console.log(text);
 
     // Внесение весов букв в словарь
     for(let i = 0; i < text.length;i++) {
@@ -27,11 +27,50 @@ function BreakCipher() {
 
 
     console.log(numRuAlph);
-    let a = "ъ";
+    let a = "щ";
     console.log(a.charCodeAt()); 
 
     for(let i = 0; i < ruAlphabet.length;i++) {
         text[i].charCodeAt()
     }
 
+    console.log(Object.entries(numRuAlph));
+
+
+    let max_vol = 0;
+    let key_vol = "";
+
+
+    // Получаем максимальное значение и его букву
+    for(let i = 0; i < ruAlphabet.length;i++) {
+
+        if(max_vol < numRuAlph[ruAlphabet[i]]) {
+            max_vol = numRuAlph[ruAlphabet[i]];
+            key_vol = ruAlphabet[i];
+        }
+    }
+
+    // В значении использованной буквы устанавливаем отрицательное значение, чтобы больше с ней не работать.
+
+    console.log(max_vol);
+    console.log(key_vol);
+    // Юникод номер полученной буквы
+
+    let unicodeVol = key_vol.charCodeAt();
+    console.log(unicodeVol);
+
+
+    // Получение ключа
+    let shift = 0;
+    if(unicodeVol < ruArray[0]) {
+        shift = unicodeVol - ruArray[0];
+    }
+    else {
+        shift = unicodeVol - ruArray[0];
+    }
+
+    console.log(shift);
+
+
+    // Цель функции - извлечь ключ, который передастся в другую функцию дешифровки.
 }
